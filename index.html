@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -9,49 +9,64 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+  background: #f5f5f5;
+}
+
+header {
+  background: #111;
+  color: white;
+  padding: 15px;
+  text-align: center;
 }
 
 .hero {
-  background: url('https://images.unsplash.com/photo-1515923162033-7c2c6f8e7b2b');
-  background-size: cover;
-  color: white;
+  background: linear-gradient(to right, #ffcc00, #ff6600);
+  padding: 80px 20px;
   text-align: center;
-  padding: 100px 20px;
+  color: black;
 }
 
 .hero h1 {
   font-size: 40px;
+  margin: 0;
+}
+
+.hero p {
+  font-size: 18px;
 }
 
 .btn {
-  background: #25D366;
-  padding: 12px 25px;
-  color: white;
-  text-decoration: none;
   display: inline-block;
   margin-top: 15px;
+  padding: 12px 20px;
+  background: green;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
 }
 
 .section {
-  padding: 40px;
+  padding: 40px 20px;
   text-align: center;
 }
 
-.services {
+.cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 15px;
 }
 
 .card {
-  background: #f4f4f4;
-  margin: 10px;
+  background: white;
   padding: 20px;
-  width: 250px;
+  width: 220px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 footer {
-  background: black;
+  background: #111;
   color: white;
   text-align: center;
   padding: 20px;
@@ -62,28 +77,34 @@ footer {
 
 <body>
 
+<header>
+  <h2>Chikason Auto Repair</h2>
+  <p>Lagos, Nigeria | Trusted Car Repair Service</p>
+</header>
+
 <div class="hero">
-  <h1>Fast & Reliable Auto Repair</h1>
-  <p>We fix engine problems, brakes & diagnostics</p>
+  <h1>We Fix Your Car Fast 🚗</h1>
+  <p>Engine • Brake • Diagnostics • Electrical</p>
   <a class="btn" href="https://wa.me/2349041312492">Chat on WhatsApp</a>
 </div>
 
 <div class="section">
   <h2>Our Services</h2>
-  <div class="services">
+  <div class="cards">
     <div class="card">Engine Repair</div>
-    <div class="card">Brake Fix</div>
-    <div class="card">Diagnostics</div>
+    <div class="card">Brake System</div>
+    <div class="card">Car Diagnostics</div>
+    <div class="card">Electrical Fix</div>
   </div>
 </div>
 
 <div class="section">
   <h2>Why Choose Us</h2>
-  <p>✔ Fast Service ✔ Affordable ✔ Trusted</p>
+  <p>✔ Fast Service ✔ Affordable ✔ Trusted Mechanics ✔ Lagos Based</p>
 </div>
 
 <footer>
-  <p>© 2026 Chikason Auto Repair</p>
+  <p>Contact: 09041312492 | Chikason Auto Repair</p>
 </footer>
 
 </body>
